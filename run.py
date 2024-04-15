@@ -21,7 +21,6 @@ for i, filename in enumerate(os.listdir("./frames"), start=1):
             frame = binary_data
         cum_frames = binary_data
         video_frames.append(frame)
-    if i == 100: break
 
 ffmpeg = subprocess.Popen([
     "ffmpeg",
